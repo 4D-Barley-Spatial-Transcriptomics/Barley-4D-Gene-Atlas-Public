@@ -35,7 +35,7 @@ This will build the container based on Dockerfile and tag it as analysis-pipelin
 
 1. Navigate to the JupyterNotebook/container directory
 
-2. Edit the runJupyterDocker.sh script by updating the following variables:
+2. Edit the runJupyterDocker.sh script by updating the following variables with the absolute path:
 
 - DATA_DIR: Directory containing your input data
 - PIPELINE_DIR: Directory where the pipeline is stored
