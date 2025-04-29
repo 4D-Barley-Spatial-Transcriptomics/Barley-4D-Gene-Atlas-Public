@@ -1,7 +1,14 @@
 
 # User Guide
 ## Barley 4D Spatial Transcriptomics Pipeline 
-This pipeline processes Visium SpaceRanger output to generate clustering as well as transcript abundance plots. It requires the *.h5 file and filtered_feature_bc_matrix/features.tsv from SpaceRanger.
+This pipeline processes Visium SpaceRanger output to generate clustering as well as transcript abundance plots. 
+It requires the following files from SpaceRanger
+- *.h5 file
+- filtered_feature_bc_matrix/features.tsv 
+- spatial (a directory)
+  - scalefactors_json.json
+  - tissue_lowres_image.png
+  - tissue_positions_list.csv
 
 
 #### Download the pipeline
