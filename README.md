@@ -5,7 +5,7 @@ This pipeline processes Visium SpaceRanger output to generate clustering as well
 
 
 #### Download the pipeline
-To access the pipeline, download it from this [link](https://github.com/4D-Barley-Spatial-Transcriptomics/Barley-4D-Gene-Atlas)
+To access the pipeline, download it from this [repository](https://github.com/4D-Barley-Spatial-Transcriptomics/Barley-4D-Gene-Atlas-Public)
 
 After downloading, you will find the following directories: 
 - **pipeline**: Contains the R scripts and notebook that form the pipeline.
@@ -23,17 +23,17 @@ Once installed, you'll be able to build and run the container for the pipeline.
 Before using the Docker container, you need to build it. Follow the steps below:
 ```
 # Navigate to the directory containing the Dockerfile
-cd ZhejiangUniversity/Containers
+cd JupyterNotebook/container
 
 # Build the Docker container
-sudo docker build . -f Jupyter-R-432_Seurat440_Dockerfile -t analysis-pipeline:1.1.0 
+sudo docker build .  -t analysis-pipeline:1.1.0 
 ```
 
-This will build the container based on the specified Dockerfile (Jupyter-R-432_Seurat440_Dockerfile) and tag it as analysis-pipeline:1.1.0.
+This will build the container based on Dockerfile and tag it as analysis-pipeline:1.1.0.
 
 ### How to run the pipeline:
 
-1. Navigate to the ZhejiangUniversity/DEV directory
+1. Navigate to the JupyterNotebook/container directory
 
 2. Edit the runJupyterDocker.sh script by updating the following variables:
 
@@ -41,7 +41,7 @@ This will build the container based on the specified Dockerfile (Jupyter-R-432_S
 - PIPELINE_DIR: Directory where the pipeline is stored
 - UTILS_DIR: Directory containing the necessary scripts for the visualization application
 3. Run the Docker container:
-`sudo bash DEV/runJupyterDocker.sh`
+`sudo bash runJupyterDocker.sh`
 4. If you're running the pipeline on a remote Virtual Machine, set up SSH tunneling:
 ```
 # Run the following command to forward the required port:
