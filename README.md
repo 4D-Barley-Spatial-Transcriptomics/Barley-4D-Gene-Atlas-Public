@@ -58,11 +58,11 @@ ssh -L 888:localhost:8888 user@remote_server.com
 5. Access the Jupyter Notebook:
 Copy the URL that appears when the container starts and paste it into your browser.
 
-    <img src="imgs/ntbkURL.png" alt="Description" height="275">
+    <img src="UserGuide/imgs/ntbkURL.png" alt="Description" height="275">
 
     You should now see the landing page:
 
-    <img src="imgs/ntbkLandingPage.png" alt="Description" height="275">
+    <img src="UserGuide/imgs/ntbkLandingPage.png" alt="Description" height="275">
 
 6. Navigate to the baseNotebook.ipynb:
 
