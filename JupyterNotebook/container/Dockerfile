@@ -50,6 +50,3 @@ RUN R -e "options(repos = c(CRAN = 'https://cran.rstudio.com')); \
           install.packages('BiocManager'); \
           BiocManager::install('EBImage')"
 
-# COPY STUtility /tmp/work/STUtility
-# RUN R -e "remotes::install_local('/tmp/work/STUtility' , dependencies = FALSE)"
-
